@@ -1,0 +1,28 @@
+{
+	"required": true,
+	"package": "lv.mmp.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"AbstractContainerWidgetMixin",
+		"ChildEntryAccessor",
+		"ConfirmLinkScreenMixin",
+		"ConfirmScreenMixin",
+		"FocusRetentionMixin",
+		"GuiMixin",
+		"ModListEntryMixin",
+		"ModMenuOptionsScreenMixin",
+		"ModListWidgetMixin",
+		"ModSearchMixin",
+		"ModsScreenClickAwayMixin",
+		"ModsScreenMixin",
+		"ParentEntryMixin",
+		"ScreenAccessor",
+		"ScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

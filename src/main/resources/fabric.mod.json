@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "mod-menu-pins",
+	"version": "${version}",
+	"name": "Mod Menu: Pins",
+	"description": "Clicking the right mouse button twice on the mod will pin it.",
+	"authors": [
+		"LViShiba, Dozzensky"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/mod-menu-pins",
+		"issues": "https://github.com/LViShiba/Mod-Menu-Pins/issues"
+	},
+	"license": "Code [CC-BY-ND-4.0], Textures [ARR]",
+	"icon": "assets/mod-menu-pins/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"lv.mmp.ModMenuPins"
+		],
+		"client": [
+			"lv.mmp.client.ModMenuPinsClient"
+		],
+		"modmenu": [
+			"lv.mmp.client.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"mod-menu-pins.mixins.json",
+		{
+			"config": "mod-menu-pins.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"modmenu": ">=20.0.1",
+		"yet_another_config_lib_v3": ">=3.9.3"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": "modmenu",
+			"links": {
+				"modmenu.source": "https://github.com/LViShiba/Mod-Menu-Pins",
+				"modmenu.modrinth": "https://modrinth.com/mod/mod-menu-pins",
+				"modmenu.discord": "https://discord.com/invite/kNsbyRQrUg"
+			}
+		}
+	}
+}
